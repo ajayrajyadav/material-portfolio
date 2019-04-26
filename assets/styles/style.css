@@ -1,12 +1,14 @@
 
-.footer{
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: grey;
-    color: white;
-    text-align: center;
+
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+#main-container {
+  flex: 1 0 auto;
 }
 
 
@@ -15,6 +17,7 @@
     padding-top: 20px;
     color: #e8eaf6;
     background-color: #8e24aa ;
+    text-align: center;
 }
 
 .social-icons a {

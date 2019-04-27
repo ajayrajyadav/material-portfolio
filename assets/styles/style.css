@@ -40,4 +40,8 @@ body {
   .social-icons a:hover {
     background-color: #BD5D38;
   }
- 
+  
+.pdfobject-container { 
+    height: 50rem; 
+    border: 1rem solid rgba(0,0,0,.1); 
+}

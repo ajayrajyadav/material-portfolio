@@ -128,14 +128,22 @@ $(document).ready(function () {
         $("#footer-page").append($("<div>").addClass("social-icons").attr("id","social-stuff"));
         $("#footer-page").append($("<div>").addClass("footer-copyright").attr("id", "footer-cp"));
         $("#footer-cp").append($("<div>").addClass("container").attr("id","footer-content"));
-        $("#footer-content").html("© 2014 Copyright Text");
+        $("#footer-content").html("© 2019 ajsoft inc.");
         $("#footer-content").append($("<div>").addClass("social-icons").attr("id","social-stuff"));
         $("#social-stuff").append($("<a>").attr("href","https://www.linkedin.com/in/ajayrajyadav/").attr("id", "footer-linkedin"));
         $("#footer-linkedin").append($("<i>").addClass("fab fa-linkedin-in"));
         $("#social-stuff").append($("<a>").attr("href","https://github.com/ajayrajyadav").attr("id", "footer-git"));
         $("#footer-git").append($("<i>").addClass("fab fa-github"));
-        $("#social-stuff").append($("<a>").attr("href","https://github.com/ajayrajyadav").attr("id", "footer-pdf"));
+        $("#social-stuff").append($("<a>").attr("href","./assets/images/ajayyadavResume2018.pdf").attr("id", "footer-pdf"));
         $("#footer-pdf").append($("<i>").addClass("fas fa-file-pdf"));
+    }
+
+    function buildPDFContainer(){
+        $("#main-container").empty();
+        $("#main-container").append($("<div>").addClass("container").attr("id","pdf-container"));
+        var src="./assets/images/ajayyadavResume2018.pdf";
+        PDFObject.embed("./assets/images/ajayyadavResume2018.pdf", "#pdf-container");
+        
     }
 
     function popupErrorModal(message){
@@ -188,6 +196,11 @@ $(document).ready(function () {
     $(document).on("click", "#submit-btn", function () {
         event.preventDefault();
         sendEmail();
+    });
+
+    $(document).on("click", "#footer-pdf", function () {
+        event.preventDefault();
+        buildPDFContainer();
     });
 
 });

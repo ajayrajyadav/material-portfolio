@@ -130,9 +130,9 @@ $(document).ready(function () {
         $("#footer-cp").append($("<div>").addClass("container").attr("id","footer-content"));
         $("#footer-content").html("© 2019 ajsoft inc.");
         $("#footer-content").append($("<div>").addClass("social-icons").attr("id","social-stuff"));
-        $("#social-stuff").append($("<a>").attr("href","https://www.linkedin.com/in/ajayrajyadav/").attr("id", "footer-linkedin"));
+        $("#social-stuff").append($("<a>").attr("href","https://www.linkedin.com/in/ajayrajyadav/").attr({id: "footer-linkedin", target: "_blank"}));
         $("#footer-linkedin").append($("<i>").addClass("fab fa-linkedin-in"));
-        $("#social-stuff").append($("<a>").attr("href","https://github.com/ajayrajyadav").attr("id", "footer-git"));
+        $("#social-stuff").append($("<a>").attr("href","https://github.com/ajayrajyadav").attr({id: "footer-git", target: "_blank"}));
         $("#footer-git").append($("<i>").addClass("fab fa-github"));
         $("#social-stuff").append($("<a>").attr("href","./assets/images/ajayyadavResume2018.pdf").attr("id", "footer-pdf"));
         $("#footer-pdf").append($("<i>").addClass("fas fa-file-pdf"));

@@ -121,6 +121,20 @@ $(document).ready(function () {
         $("#fourth-card-button").append($("<i>").addClass("fab fa-github")).attr("href", "https://github.com/ajayrajyadav/TriviaGame.git");
         $("#fourth-card").append($("<div>").addClass("card-content").attr("id", "fourth-card-content"));
         $("#fourth-card-content").append($("<p>").html("bootstrap, Javascript and jQuery"));
+
+        $("#main-ul").append($("<li>").attr("id","fifth-li"));
+        $("#fifth-li").append($("<div>").addClass("collapsible-header").attr("id","fifth-header"));
+        $("#fifth-header").append($("<i>").addClass("fas fa-laptop-code"));
+        $("#fifth-header").append($("<a>").html("Baby-Logger"));
+        $("#fifth-li").append($("<div>").addClass("collapsible-body").attr("id","fifth-li-body"));
+        $("#fifth-li-body").append($("<div>").addClass("card").attr("id","fifth-card"));
+        $("#fifth-card").append($("<div>").addClass("card-image").attr("id","fifth-card-image"));
+        $("#fifth-card-image").append($("<img>").addClass("").attr({src:"./assets/images/baby-logger-main-page-food.png"}));
+        $("#fifth-card-image").append($("<span>").addClass("card-title").html("Baby-Logger"));
+        $("#fifth-card-image").append($("<a>").addClass("btn-floating halfway-fab waves-effect waves-light green").attr("id","fifth-card-button"));
+        $("#fifth-card-button").append($("<i>").addClass("fab fa-github")).attr("href", "https://github.com/ajayrajyadav/baby-logger.git");
+        $("#fifth-card").append($("<div>").addClass("card-content").attr("id", "fifth-card-content"));
+        $("#fifth-card-content").append($("<p>").html("bootstrap, Javascript and jQuery"));
     }
 
     function buildFooter(){
